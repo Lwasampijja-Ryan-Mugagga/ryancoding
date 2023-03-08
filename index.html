@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--site information-->
+<html lang="en-UK">
+<head>
+       <meta charset="UTF-8">
+       <meta name="keywords" content="html/css, html, web, webdeveloper, lowcost, cheap,budget ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ryan Coding</title>
+    <link rel="icon" type="image" href="Images\ryan_coding.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+ <body w3-leftbar w3-blue w3-rightbar w3-blue>
+  <header class="w3-container w3-blue"><h1> <img src="Images\ryan_coding.jpg" style="width:140px;height:140px">Welcome to Ryan Coding!
+  </h1> </header> <br>
+
+<!--Navigation-->
+ 
+<div class="w3-bar">
+<nav> <a href="index.html" class="w3-button w3-green">Home</a>
+    <a href="getawebsite.html" class="w3-button w3-green">Get a Website!</a>
+    <!-- <a href="sampletemplates.html" class="w3-button w3-green">Sample Templates</a> -->
+</nav>
+  </div>
+
+  <!--about me-->
+
+<article class="w3-container">
+    <h3>About Ryan Coding</h3> <h6><i>Written by Ryan.</i></h6>
+    
+    <p>  <b>Hi!</b> <br> My name is Ryan! I am a <b><i>Ugandan Male aged fourteen years.</b></i> 
+    
+    I began Ryan Coding during my Primary Seven Vacation. I build and design websites for pay. <br>
+    
+    Ryan Coding is a new project I have just started!<br> <br>
+    
+    This is my first website so it may have some bugs, however, I kindly request that incase you encounter any bugs, please report them by sending me an email. Since I am a beginner, I'm doing l</b></i> cost web development</mark> meaning I charge way cheaper than other web devs.<br> <br>
+    
+    I am constantly working on improving this website! If you have any suggestions, please quickly fill the suggestion form by hitting the icon at the bottom right of your screen.<br> <br> </p>
+
+
+    
+  <script src="https://form.jotform.com/cardforms/feedbackEmbedButton.min.js"></script>
+  <script>
+    new JF_FeedbackEmbedButton({
+      
+  buttonIcon: "rate",
+  buttonFontColor: "#FFFFFF",
+  buttonBackgroundColor: "#007FEF",
+  formId: 230091736605049
+  ,
+      buttonText: "Send Feedback",
+      buttonSide: "Bottom",
+      buttonAlign: "Right",
+      base: "https://form.jotform.com/",
+    });
+  </script>
+  <script type="text/javascript">
+    var ifr = document.getElementById("lightbox-230091736605049");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+    </p> </article> <hr>
+
+
+<!--FOOTER-->
+<footer class="w3-container w3-blue"> <header class="w3-container">Ryan Coding 2023&trade;</header>
+<p>All Rights Reserved. This webpage has been designed for learning purposes. No part of this webpage may be reproduced in any form without the prior permission from Ryan Coding&trade;. Please contact me via my email (mugaggaryan@outlook.com) incase you have encountered any bugs.
+        </footer>
+</body>
+</html>
